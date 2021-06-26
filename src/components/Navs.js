@@ -5,7 +5,7 @@ const LINKS = [
   { to: '/', text: 'Home' },
   { to: '/starred', text: 'Started' },
 ];
-function Navs() {
+const Navs = () => {
   return (
     <div>
       <ul>
@@ -17,6 +17,6 @@ function Navs() {
       </ul>
     </div>
   );
-}
+};
 
 export default Navs;

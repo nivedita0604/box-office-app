@@ -1,7 +1,7 @@
 import React from 'react';
 import Navs from './Navs';
 import Title from './Title';
-function MainPageLayout({ children }) {
+const MainPageLayout = ({ children }) => {
   return (
     <div>
       <Title
@@ -12,6 +12,6 @@ function MainPageLayout({ children }) {
       {children}
     </div>
   );
-}
+};
 
 export default MainPageLayout;

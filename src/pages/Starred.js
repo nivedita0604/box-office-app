@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Starred() {
+const Starred = () => {
   return <div>This is Starred</div>;
-}
+};
 
 export default Starred;
