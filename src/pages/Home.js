@@ -3,13 +3,13 @@ import MainPageLayout from '../components/MainPageLayout';
 import { apiGet } from '../misc/config';
 import ShowGrid from '../components/show/ShowGrid';
 import ActorGrid from '../components/actor/ActorGrid';
+
 const Home = () => {
   const [input, setInput] = useState('');
   const [results, setResults] = useState(null);
   const [searchOption, setSearchOption] = useState('shows');
 
   const isShowsSearch = searchOption === 'shows';
-
   const onSearch = () => {
     apiGet(`/search/${searchOption}?q=${input}`).then(result => {
       setResults(result);
